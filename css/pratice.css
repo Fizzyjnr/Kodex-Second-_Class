@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  background-color: aqua;
+}
+nav {
+  background-color: black;
+  flex-direction: ;
+  background-attachment: scroll;
+}
+section {
+  background-color: rgba(0, 0, 0, 0.295);
+  background-image: url(/images/images\\(1\).png);
+  height: 700px;
+  background-image: url(/images/images\\(1\).png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+  background-blend-mode: overlay;
+  height: 700px;
+  color: white;
+}
+
+section a {
+  background-color: aqua;
+  border-radius: 10px;
+}
+section a:hover {
+  background-color: brown;
+}
+section img {
+  width: 50%;
+  border-radius: 50px;
+}
+.widthcalc {
+  background-color: blueviolet;
+  width: 100%;
+  height: 50%;
+}
+.widthChild {
+  color: aliceblue;
+  background-color: brown;
+  width: 50vw;
+  height: 100vh;
+  font: 1em sans-serif;
+  font-style: ;
+  overflow-y: scroll;
+}
+.body-img {
+  width: 700px;
+  height: 500px;
+  background-color: orange;
+}
+.body-img img {
+  width: 50%;
+  height: 50%;
+
+  object-fit: contain;
+  object-position: bottom;
+  opacity: 1;
+  overflow: ;
+}
+/* Box Module */
+.box-one {
+  background-color: red;
+  font-size: 24px;
+  width: 500px;
+  height: 300px;
+  /* padding */
+  /* padding: 40px; */
+  /* padding:20px 15px 20px 30px; */
+
+  /* padding-left: 20px;
+padding-right:20px ;
+padding-top: 20px ;
+padding-bottom: 20px; */
+  /* same with margin and border */
+  /* or */
+  padding-inline: 50px 10px;
+  padding-block: 50px 10px;
+  border: 10px solid black;
+  margin: 20px;
+  /* transform: rotate(90deg); */
+}
+
+.box-two {
+  background-color: blue;
+  font-size: 24px;
+  width: 500px;
+  height: 300px;
+  padding-inline: 50px 10px;
+  padding-block: 50px 10px;
+  border: 10px solid black;
+  margin: 20px;
+  text-align: justify;
+  text-decoration: underline;
+  text-shadow: 20px 10px 5px white;
+  text-transform: uppercase;
+}
+.box-two:hover {
+  transform: scale(1.5);
+  transform: skew(-10deg);
+  transform: translate(300px);
+}

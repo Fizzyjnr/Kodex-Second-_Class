@@ -1,0 +1,54 @@
+/* h1 {
+  background-color: blue;
+  color: azure;
+  border: 2px solid black;
+}
+p {
+  color: purple;
+} */
+
+/* Elements selector */
+/* 1 class selector */
+.similar {
+  color: aquamarine;
+  background-color: black;
+}
+.nonsimilar {
+  background-color: red;
+  color: ;
+}
+.btn {
+  background-color: wheat;
+
+}
+/* 2 ID selector */
+/* the id selector previ==cides over the class group but can om=nly be used once, not suitable */
+
+/* #group{background-color: brown;
+  color: aquamarine;
+border: 2px solid black; */
+
+/* decendaant combinator */
+.group p {background-color: black;color: yellow;
+   }
+.group > div> p {color: aqua;}
+
+}
+
+  
+
+/* group selector
+
+.group>div>p,
+.group>div>h1
+{background-color: blue;
+ 
+  /* adjacent siblings combinator */
+  .group>div */
+
+
+
+
+
+
+

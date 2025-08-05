@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: white;
+  overflow-x: hidden;
+  font-family: "Be Vietnam Pro", sans-serif;
+  height: 100%;
+  
+}
+main {
+  flex: 1;
+}
+section.first {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px;
+  position: relative;
+  z-index: 2;
+  height: 200px;
+}
+.first-text {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  color: hsl(228, 39%, 23%);
+}
+.first-link {
+  background-color: orange;
+  
+  width: 130px;
+  height: 50px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.first-link a{
+  text-decoration: none;
+  color: white;
+}
+.bg-img {
+  position: relative;
+  left: 750px;
+  bottom: 210px;
+}
+section.second {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  bottom: 600px;
+  padding-inline: 80px;
+}
+.second-texts {
+  width: 40%;
+}
+.second-texts1 {
+  color: hsl(228, 39%, 23%);
+  font-size: 50px;
+  font-weight: 500;
+}
+.second-texts2 {
+  color: hsl(227, 12%, 61%);
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+section.third {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 80px;
+  position: relative;
+  bottom: 540px;
+}
+.third-texts {
+  width: 50%;
+}
+.third-head1 {
+  font-size: 37px;
+  position: relative;
+  right: 90px;
+}
+.third-texts1 {
+  width: 60%;
+}
+.third-img1 {
+  position: relative;
+  top: 40px;
+  right: 400px;
+}
+.third-secondtexts {
+  position: relative;
+  bottom: 195px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  left: 10px;
+  width: 40%;
+}
+.each {
+  /* background: white;
+  padding: 1.5rem;
+  border-radius: 8px; */
+  /* box-shadow: 0 2px 6px rgba(0,0,0,0.1); */
+  /* position: relative;
+  padding-left: 4rem; */
+}
+.numbers {
+  background-color: orange;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  position: relative;
+  right: 65px;
+  top: 23px;
+}
+.third-head2 {
+  color: hsl(228, 39%, 23%);
+}
+section.fourth {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  position: relative;
+  left: 500px;
+  bottom: 780px;
+  gap: 70px;
+  padding-inline: 80px;
+}
+.boxes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  position: relative;
+  right: 500px;
+}
+.fourth-boxes {
+  background-color: #f2f2f2;
+  border-radius: 30px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  gap: 15px;
+}
+.fourth-texts {
+  padding-left: 20px;
+  padding-bottom: 25px;
+}
+
+.fourth-boxes img {
+  border-radius: 50%;
+}
+/* .fourth-link {
+  position: relative;
+  left: 0px; */
+
+section.fifth {
+  background-color: #f25f3a;
+  width: 100%;
+  height: 200px;
+  position: relative;
+  bottom: 600px;
+  padding-inline: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fifth-text1 {
+  color: #f2f2f2;
+  width: 70%;
+}
+.fifth-link {
+  background-color: white;
+  width: 130px;
+  height: 50px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: orange;
+}
+
+footer.sixth {
+  background-color: #1d1e25;
+  width: 100%;
+  height: 200px;
+  position: relative;
+  bottom: 600px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 90px;
+}
+.sixth-img1 {
+  padding-bottom: 50px;
+}
+.sixth-img2 {
+  letter-spacing: 10px;
+}
+.sixth-link1 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 15px;
+}
+.sixth-link1 a {
+  color: white;
+  text-decoration: none;
+}
+
+.sixth-link2 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 15px;
+}
+.sixth-link2 a {
+  color: #f2f2f2;
+  text-decoration: none;
+}
+.sixth-input {
+  display: flex;
+  gap: 10px;
+}
+.input-email {
+  border: 1px solid orange;
+  border-radius: 30px;
+  background-color: white;
+}
+input {
+  background: none;
+  border: none;
+  outline: none;
+  color: #f25f3a;
+  padding-left: 10px;
+}
+.input-button {
+  border: 1px solid #f25f3a;
+  background-color: #f25f3a;
+  color: #f2f2f2;
+  border-radius: 45%;
+  width: 27px;
+  height: 22px;
+  font-size: 7px;
+}
+a:hover {
+  color: #f25f3a;
+}

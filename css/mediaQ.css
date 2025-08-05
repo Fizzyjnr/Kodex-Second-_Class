@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*
+@medis media-type and (condition: breakpoint or value) {
+    css rules
+}
+
+media-type{
+    all, print, screen, speech, tv
+}
+    
+condition{
+    width, height, orientation, aspect-ratio, device-width, device-height, resolution, scan, grid
+}
+
+breakpoint{
+    min-width, max-width, min-height, max-height
+}
+
+value{
+    min-width, max-width, min-height, max-height
+}
+
+*/
+
+body {
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+
+  background-color: #1e293b;
+  color: rgb(255, 218, 5);
+  /* background-image: url(../img/8a22de00e9a9e5b5ea6ef960d2ea72ba.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; */
+  background-image: radial-gradient(whitesmoke, #1e293b);
+  display: flex;
+  flex-direction: column;
+}
+
+header,
+nav,
+main,
+footer {
+  display: grid;
+  place-content: center;
+  grid-template-columns: 100%;
+  text-align: center;
+}
+
+header,
+footer {
+  position: sticky;
+  background-color: #1e293b;
+  color: whitesmoke;
+}
+
+header {
+  top: 0;
+}
+
+nav {
+  background-color: #fff;
+  color: #000;
+  padding: 0.5rem;
+  border-bottom: 2px solid #000;
+}
+
+main {
+  flex-grow: 1;
+}
+
+footer {
+  bottom: 0;
+}
+
+/* || SMALL */
+@media screen and (max-width: 576px) {
+  body {
+    background-color: green;
+    background-image: radial-gradient(whitesmoke, green);
+  }
+  nav {
+    display: none;
+  }
+}
+
+/* || MEDIUM : min-width: 768px */
+
+/* || LARGE: min-width: 992px */
+/* || XLARGE: min-width: 1200px */

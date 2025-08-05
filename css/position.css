@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.parent {
+  height: 150vh;
+  background-color: aqua;
+  position: relative;
+}
+.child {
+  color: white;
+}
+.child-one {
+  background-color: green;
+  /* for relative */
+   /* position: relative;
+  left: 200px;
+  top: 140px; 
+  margin-top: 3rem; */ */
+}
+.child-two {
+  background-color: blue;
+   position: absolute;
+  width: 100%; */
+   top: 10px;
+  /* top: 0;
+  */
+  /* bottom: 0; */
+}
+.child-three {
+  background-color: red;
+   /* position: sticky; */
+  /* top: 20px;  */
+  /* position: fixed; */
+  /* top: 0;
+  padding: 1.5rem;
+  z-index: 99;
+  width: 100%; 
+} */
+
+/* Position: static, relative, absolute, sticky and fixed */
+section.human {
+  height: 70vh;
+  background-color: antiquewhite;
+}
+section.second {
+  background-color: purple;
+  position: relative;
+}
+.floating-img {
+  width: 150px;
+  height: 150px;
+}
+.floating-img img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -400px;
+
+  z-index: 98;
+}
