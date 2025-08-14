@@ -5,59 +5,544 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kodex Africa</title>
     <link href="./output.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <!-- NAVBAR -->
     <nav
-      class="bg-[#1b1b1b] h-23 text-white flex items-center justify-between px-15 py-4 fixed top-0 w-full z-50"
+      class="bg-[#1b1b1b] text-white flex flex-wrap items-center justify-between px-4 md:px-10 py-4 fixed top-0 w-full z-50"
     >
+      <!-- Logo -->
       <div>
-        <a href=""
-          ><img
+        <a href="#">
+          <img
             src="https://kodexafrica.com/new/img/kodexafricaLogo.png"
-            alt=""
-            width="80"
-        /></a>
+            alt="Kodex Africa Logo"
+            class="w-20 sm:w-24"
+          />
+        </a>
       </div>
-      <div class="flex items-center gap-8 ml-100">
-        <a href="index.html">HOME</a>
-        <a href="about.html">ABOUT US</a>
-        <select name="" id="" class="bg-white text-black rounded px-2 py-1">
-          <option value="">Our subsidiaries</option>
-          <option value="">sub 1</option>
-          <option value="">sub 2</option>
-          <option value="">sub 3</option>
-          <option value="">sub 3</option>
+
+      <!-- Links -->
+      <div
+        class="flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-8 mt-4 md:mt-0"
+      >
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <select class="text-white bg-transparent px-2 py-1">
+          <option>Our subsidiaries</option>
+          <option>sub 1</option>
+          <option>sub 2</option>
+          <option>sub 3</option>
         </select>
         <a href="/src/contactus.html">Contact Us</a>
       </div>
-      <div>
+
+      <!-- Register Button -->
+      <div class="mt-4 md:mt-0">
         <button
-          class="bg-amber-500 text-white px-7 py-2 rounded-[5px] w-[180px]"
+          class="relative group bg-amber-500 text-white px-6 py-2 md:px-7 md:py-3 rounded w-[150px] md:w-[200px] overflow-hidden"
         >
-          <a href="/src/SignIn.html"> Register</a>
+          <span
+            class="relative z-10 group-hover:text-amber-500 transition-colors duration-300"
+          >
+            <a href="/src/SignUp.html">Register</a>
+          </span>
+          <span
+            class="absolute inset-0 bg-[#1b1b1b] scale-x-0 origin-left transition-transform duration-300 ease-in-out group-hover:scale-x-100"
+          ></span>
         </button>
       </div>
     </nav>
+
+    <!-- HERO SECTION -->
     <section
-      class="relative bg-[url('https://kodexafrica.com/new/img/Third_slide.png')] bg-cover h-screen bg-center text-white mt-[90px]"
+      class="relative bg-[url('https://kodexafrica.com/new/img/Third_slide.png')] bg-cover bg-center text-white min-h-screen mt-[80px]"
     >
       <div
-        class="absolute inset-0 bg-black/60 flex flex-col items-center justify-center px-[100px] gap-[30px]"
+        class="absolute inset-0 bg-black/60 flex flex-col items-center justify-center px-6 sm:px-12 md:px-24 gap-6 text-center"
       >
-        <h1 class="text-center text-6xl font-bold p-6">
-          Fostering A Well-Rounded Equilibrium In The Tech Realm..  
+        <h1
+          class="text-3xl sm:text-4xl md:text-6xl font-bold px-4 sm:px-0 leading-snug"
+        >
+          Fostering A Well-Rounded
+          <span class="text-[#e68815]">Equilibrium</span> In The Tech Realm..
         </h1>
-        <p class="text-center text-[20px]">
+        <p class="text-base sm:text-lg md:text-xl px-4">
           Our dedicated team of web developers and designers collaborates
           closely with clients to understand their unique objectives, ensuring
-          that each product is tailored to their needs.
+          each product is tailored to their needs.
         </p>
         <button
-          class="bg-amber-500 text-white px-7 py-3 rounded-[5px] w-[200px]"
+          class="relative group bg-amber-500 text-white px-6 py-2 md:px-7 md:py-3 rounded w-[150px] md:w-[200px] overflow-hidden"
         >
-          Get In Touch
+          <span
+            class="relative z-10 group-hover:text-amber-500 transition-colors duration-300"
+          >
+            Get In Touch
+          </span>
+          <span
+            class="absolute inset-0 bg-[#1b1b1b] scale-x-0 origin-left transition-transform duration-300 ease-in-out group-hover:scale-x-100"
+          ></span>
         </button>
       </div>
     </section>
+
+    <!-- OUR APPROACH SECTION -->
+    <section class="bg-white py-16 px-6 sm:px-10">
+      <h2 class="text-3xl sm:text-4xl font-semibold text-center mb-10">
+        Our Approach
+      </h2>
+      <div
+        class="flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-10"
+      >
+        <!-- Card 1 -->
+        <div
+          class="bg-[#1b1b1b] text-white rounded-2xl p-6 sm:p-8 w-full max-w-sm"
+        >
+          <div class="flex items-center justify-center mb-6">
+            <div
+              class="bg-white text-black w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center rounded-full text-2xl sm:text-3xl"
+            >
+              <i class="ri-handshake-line"></i>
+            </div>
+          </div>
+          <h3 class="text-lg sm:text-xl font-semibold mb-4 text-center">
+            Partnerships & Collaborations
+          </h3>
+          <p class="text-sm sm:text-base text-center">
+            We leverage strategic partnerships and collaborations in building
+            the next generation of Africa’s Innovators.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div
+          class="bg-[#1b1b1b] text-white rounded-2xl p-6 sm:p-8 w-full max-w-sm"
+        >
+          <div class="flex items-center justify-center mb-6">
+            <div
+              class="bg-white text-black w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center rounded-full text-2xl sm:text-3xl"
+            >
+              <i class="ri-team-line"></i>
+            </div>
+          </div>
+          <h3 class="text-lg sm:text-xl font-semibold mb-4 text-center">
+            Community of Problem Solvers
+          </h3>
+          <p class="text-sm sm:text-base text-center">
+            Through our pair-peer learning model, we build a community of
+            problem solvers.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div
+          class="bg-[#1b1b1b] text-white rounded-2xl p-6 sm:p-8 w-full max-w-sm"
+        >
+          <div class="flex items-center justify-center mb-6">
+            <div
+              class="bg-white text-black w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center rounded-full text-2xl sm:text-3xl"
+            >
+              <i class="ri-line-chart-line"></i>
+            </div>
+          </div>
+          <h3 class="text-lg sm:text-xl font-semibold mb-4 text-center">
+            Delivery of Satisfying Services
+          </h3>
+          <p class="text-sm sm:text-base text-center">
+            By interpreting our client’s vision, we deliver satisfying services
+            that yield business growth and increase their scope of influence.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4 -->
+    <section class="relative bg-[#1b1b1b] py-10 px-4 md:h-[580px]">
+      <div
+        class="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-[30px]"
+      >
+        <!-- Left Cards -->
+        <div
+          class="w-full md:w-[50%] md:ml-[60px] my-[20px] flex flex-col gap-[20px]"
+        >
+          <div
+            class="bg-[#f6ce9e] w-full max-w-[400px] h-auto md:h-[170px] rounded-2xl flex flex-col items-center justify-center gap-[10px] transform md:-rotate-5 px-4 py-5"
+          >
+            <h2 class="font-bold text-black self-start">Our Vision</h2>
+            <p class="leading-tight text-center md:text-left">
+              To be the driving force behind Africa's tech ecosystem, fostering
+              innovation, knowledge sharing, and technological advancement to
+              empower individuals and businesses, ultimately propelling Africa
+              into a global technology leader.
+            </p>
+          </div>
+          <div
+            class="bg-white w-full max-w-[400px] h-auto md:h-[170px] rounded-2xl flex flex-col items-center justify-center gap-[10px] transform md:rotate-5 md:ml-[100px] px-4 py-5"
+          >
+            <h2 class="font-bold text-black self-start">Our Mission</h2>
+            <p class="leading-tight text-center md:text-left">
+              To harness the power of technology in transforming lives and
+              businesses across the African continent. We are dedicated to
+              achieving this through our Kodex Academy, Kodex Build & the
+              SpaceNg.
+            </p>
+          </div>
+        </div>
+
+        <!-- Right Text Content -->
+        <div
+          class="w-full md:w-[50%] flex flex-col gap-[10px] md:relative md:right-[50px] md:top-[70px] px-2"
+        >
+          <h2 class="text-[#e68815] tracking-wide text-center md:text-left">
+            BREAKING THE BARRIER TO TECH
+          </h2>
+          <h1
+            class="text-3xl md:text-5xl font-bold text-white mb-4 text-center md:text-left"
+          >
+            Empowering Through
+            <span class="text-[#e68815]">Tech Inclusion</span> and
+            <span class="text-[#e68815]">Accessibility</span>
+          </h1>
+          <p
+            class="text-white mt-2 tracking-wide leading-loose text-center md:text-left"
+          >
+            We are committed to assisting people in overcoming obstacles that
+            can make entering the tech industry challenging. We know that
+            newcomers to tech encounter difficulties, so we put in the effort to
+            simplify things. We provide accessible training, mentorship, and a
+            welcoming community to ensure that anyone can participate,
+            regardless of their financial situation, resources, or connections.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="bg-white py-16 px-4">
+      <div class="flex flex-col lg:flex-row justify-center items-center gap-8">
+        <!-- Card 1 -->
+        <div
+          class="bg-[#fae6cd] h-auto w-full max-w-[365px] rounded-2xl flex flex-col items-center justify-center gap-[20px] px-5 py-6"
+        >
+          <h2 class="text-[20px] font-semibold text-center">Kodex Academy</h2>
+          <p class="leading-tight text-[#585757] text-center">
+            Kodex Academy provides an extensive selection of courses covering
+            full-stack web development, mobile app development, UI/UX design,
+            and data analysis.
+          </p>
+          <button
+            class="relative group bg-amber-500 text-white px-7 py-3 rounded-[5px] w-[200px] overflow-hidden"
+          >
+            <span
+              class="relative z-10 block group-hover:text-amber-500 transition-colors duration-300"
+            >
+              Learn More
+            </span>
+            <span
+              class="absolute inset-0 bg-[#1b1b1b] scale-x-0 origin-left transition-transform duration-300 ease-in-out group-hover:scale-x-100"
+            ></span>
+          </button>
+        </div>
+
+        <!-- Card 2 -->
+        <div
+          class="bg-[#fae6cd] h-auto w-full max-w-[365px] rounded-2xl flex flex-col items-center justify-center gap-[20px] px-5 py-6"
+        >
+          <h2 class="text-[20px] font-semibold text-center">Kodex Build</h2>
+          <p class="leading-tight text-[#585757] text-center">
+            Kodex Build operates as a complete development studio, delivering
+            cutting-edge product development services to both corporate clients
+            and individuals.
+          </p>
+          <button
+            class="relative group bg-amber-500 text-white px-7 py-3 rounded-[5px] w-[200px] overflow-hidden"
+          >
+            <span
+              class="relative z-10 block group-hover:text-amber-500 transition-colors duration-300"
+            >
+              Learn More
+            </span>
+            <span
+              class="absolute inset-0 bg-[#1b1b1b] scale-x-0 origin-left transition-transform duration-300 ease-in-out group-hover:scale-x-100"
+            ></span>
+          </button>
+        </div>
+
+        <!-- Card 3 -->
+        <div
+          class="bg-[#fae6cd] h-auto w-full max-w-[365px] rounded-2xl flex flex-col items-center justify-center gap-[20px] px-5 py-6"
+        >
+          <h2 class="text-[20px] font-semibold text-center">The Space NG</h2>
+          <p class="leading-tight text-[#585757] text-center">
+            The Space NG aims at establishing an environment and community that
+            fosters collaboration, connecting entrepreneurs, professionals, and
+            creatives while offering growth opportunities.
+          </p>
+          <button
+            class="relative group bg-amber-500 text-white px-7 py-3 rounded-[5px] w-[200px] overflow-hidden"
+          >
+            <span
+              class="relative z-10 block group-hover:text-amber-500 transition-colors duration-300"
+            >
+              Learn More
+            </span>
+            <span
+              class="absolute inset-0 bg-[#1b1b1b] scale-x-0 origin-left transition-transform duration-300 ease-in-out group-hover:scale-x-100"
+            ></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- ok -->
+      <h2
+        class="font-semibold text-2xl md:text-4xl mb-10 md:mb-[65px] mt-10 md:mt-[160px] tracking-wide text-center md:text-left md:ml-[390px]"
+      >
+        We've Got All the Skills You Need
+      </h2>
+
+      <!-- Content -->
+      <div
+        class="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-[30px]"
+      >
+        <!-- Left Text -->
+        <div class="w-full md:w-[50%]">
+          <h1
+            class="text-3xl md:text-5xl font-bold text-black mb-5 md:mb-[20px] w-full md:w-[90%] text-center md:text-left"
+          >
+            Helping <span class="text-[#e68815]">Africa's</span> Bright
+            <span class="text-[#e68815]">Tech</span> Minds Thrive
+          </h1>
+
+          <p
+            class="text-[#585757] tracking-wide leading-loose w-full md:w-[90%] text-justify md:text-left"
+          >
+            Here at Kodex Africa, we have a crucial role in supporting Africa's
+            tech-savvy talents. We offer a wide range of programs aimed at
+            nurturing valuable, long-lasting skills. Through scholarships and
+            financial assistance, we make sure that financial challenges don't
+            stand in the way of quality education. We focus on skill-building,
+            offering coding bootcamps and workshops that prepare aspiring tech
+            professionals with highly sought-after expertise.
+          </p>
+
+          <p
+            class="text-[#585757] tracking-wide leading-loose mt-4 w-full md:w-[90%] text-justify md:text-left"
+          >
+            Mentorship is at the heart of our approach, connecting emerging tech
+            talents with experienced professionals who provide guidance and
+            networking opportunities.
+          </p>
+
+          <p
+            class="text-[#585757] tracking-wide leading-loose mt-4 w-full md:w-[90%] text-justify md:text-left"
+          >
+            In summary, our versatile strategy encompasses education, skill
+            development, mentorship, and entrepreneurship. We empower Africa's
+            tech enthusiasts to thrive, innovate, and cultivate skills that
+            stand the test of time. This, in turn, contributes to sustainable
+            development and enhances Africa's influence in the global tech
+            community.
+          </p>
+
+          <button
+            class="relative group bg-amber-500 text-white px-7 py-3 rounded-[5px] w-[200px] overflow-hidden mt-6 md:mt-[30px] mx-auto md:mx-0"
+          >
+            <span
+              class="relative z-10 block group-hover:text-amber-500 transition-colors duration-300"
+            >
+              Apply Now
+            </span>
+            <span
+              class="absolute inset-0 bg-[#1b1b1b] scale-x-0 origin-left transition-transform duration-300 ease-in-out group-hover:scale-x-100"
+            ></span>
+          </button>
+        </div>
+
+        <!-- Right Image -->
+        <div class="w-full md:w-auto">
+          <img
+            src="/images/skillsets.png"
+            alt="Skillsets"
+            class="w-full max-w-[500px] mx-auto md:mx-0"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- dfj -->
+
+    <!-- Responsive Business Brochure Section -->
+    <section class="relative bg-[#1b1b1b] py-16 px-6 md:h-[670px]">
+      <div
+        class="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-[70px]"
+      >
+        <!-- Image Box -->
+        <div
+          class="border-t-[30px] border-l-[30px] border-t-[#e68815] border-l-[#e68815] rounded-br-[50px] rounded-tl-[50px] overflow-hidden w-full max-w-[350px] md:relative md:left-[70px] md:mt-[110px]"
+        >
+          <img
+            src="/images/brochure.png"
+            alt="Brochure Image"
+            class="w-full h-auto"
+          />
+        </div>
+
+        <!-- Text Content -->
+        <div
+          class="w-full md:w-[50%] flex flex-col gap-6 md:gap-[30px] mt-10 md:mt-0 md:relative md:top-[105px] md:left-[100px]"
+        >
+          <h2
+            class="text-3xl md:text-5xl font-bold text-white w-full md:w-[90%] text-center md:text-left"
+          >
+            Download Our <span class="text-[#e68815]">Business Brochure</span>
+          </h2>
+          <p
+            class="text-[#cccccc] tracking-wide text-[16px] md:text-[18px] w-full md:w-[95%] text-justify md:text-left"
+          >
+            Our business brochure is a captivating and informative document that
+            showcases the essence of our company. With a sleek design, engaging
+            content, and striking visuals, it effectively communicates our
+            mission, products, and services to our target audience. It serves as
+            a powerful tool to introduce our brand and leave a lasting
+            impression on potential clients and partners.
+          </p>
+
+          <button
+            class="relative group bg-[#e68815] text-white px-7 py-3 rounded-[5px] w-[160px] overflow-hidden mx-auto md:mx-0"
+          >
+            <span
+              class="relative z-10 block group-hover:text-amber-500 transition-colors duration-300"
+            >
+              Download
+            </span>
+            <span
+              class="absolute inset-0 bg-[#1b1b1b] scale-x-0 origin-left transition-transform duration-300 ease-in-out group-hover:scale-x-100"
+            ></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="bg-white h-[620px] relative">
+      <div
+        class="w-full flex flex-col md:flex-row items-center justify-center gap-[70px] px-4"
+      >
+        <div class="w-full md:w-[50%] mt-[80px] flex flex-col gap-[20px]">
+          <h2 class="font-semibold text-4xl tracking-wide text-[#e68815]">
+            Subscribe to our Newsletter
+          </h2>
+          <p class="tracking-wider w-[95%] text-[18px]">
+            In this newsletter, we will provide the latest updates and news
+            about technology, startup ideas and business. Hope you like it.
+          </p>
+          <div>
+            <input
+              type="email"
+              class="border border-black w-full max-w-[500px] h-[60px] px-4 rounded-2xl"
+              name="email"
+              id="email"
+              placeholder="Enter your Email."
+              title="This is an Email input"
+              required
+            />
+          </div>
+          <button
+            class="relative group bg-amber-500 text-white px-7 py-3 rounded-[5px] w-full max-w-[500px] overflow-hidden"
+          >
+            <span
+              class="relative z-10 block group-hover:text-amber-500 transition-colors duration-300"
+            >
+              Subscribe
+            </span>
+            <span
+              class="absolute inset-0 bg-[#1b1b1b] scale-x-0 origin-left transition-transform duration-300 ease-in-out group-hover:scale-x-100"
+            ></span>
+          </button>
+        </div>
+        <div class="relative mt-[50px]">
+          <img
+            src="/images/newsletter.png"
+            alt="Newsletter"
+            class="h-[350px]"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Responsive Footer -->
+    <footer class="bg-[#1b1b1b] w-full pt-12 px-6 md:px-[60px]">
+      <div class="text-white flex flex-col md:flex-row justify-between gap-10">
+        <!-- Logo + Description -->
+        <div class="md:mt-[100px]">
+          <img
+            src="/images/kodexafricaLogo.png"
+            alt="Kodex Africa Logo"
+            class="h-[60px] mb-4"
+          />
+          <p class="w-full md:w-[75%] text-sm md:text-base leading-relaxed">
+            At Kodex Africa, we are developing a pipeline of African tech
+            talents equipped with the skills, support, and network that they
+            need to solve African problems.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="flex flex-col gap-2 mt-8 md:mt-[150px]">
+          <h2 class="font-medium tracking-wider mb-2">Quick Links</h2>
+          <a href="index.html" class="text-sm">Home</a>
+          <a href="about.html" class="text-sm">About Us</a>
+          <a href="/src/contactus.html" class="text-sm">Contact Us</a>
+          <a href="#" class="text-sm">Login</a>
+          <a href="#" class="text-sm">Terms & Conditions</a>
+          <a href="#" class="text-sm">Privacy Policy</a>
+        </div>
+
+        <!-- Explore -->
+        <div class="flex flex-col gap-2 mt-8 md:mt-[150px]">
+          <h2 class="font-medium tracking-wider mb-2">Explore</h2>
+          <a href="#" class="text-sm">Kodex Academy</a>
+          <a href="#" class="text-sm">Kodex Build</a>
+          <a href="#" class="text-sm">The SpaceNg</a>
+          <a href="#" class="text-sm">Career</a>
+        </div>
+
+        <!-- Contact -->
+        <div class="flex flex-col gap-2 mt-8 md:mt-[150px]">
+          <h2 class="font-medium tracking-wider mb-2">Contact</h2>
+          <a href="#" class="text-sm"
+            >Plot No. A/127 Iyiagu Housing Estate, Awka, Anambra State.</a
+          >
+          <a href="#" class="text-sm">(+234)9031452508</a>
+          <a href="#" class="text-sm">The SpaceNg</a>
+          <a href="#" class="text-sm">support@kodexafrica.com</a>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div
+        class="flex flex-col md:flex-row justify-between items-center border-t border-white mt-12 pt-4 gap-4"
+      >
+        <p class="text-sm text-[#e68815] text-center">
+          © 2025 Kodex Africa. All Rights Reserved.
+        </p>
+        <div class="flex gap-4">
+          <a href="#"><img src="/images/icon-facebook.svg" alt="Facebook" /></a>
+          <a href="#"><img src="/images/icon-twitter.svg" alt="Twitter" /></a>
+          <a href="#"
+            ><img src="/images/icon-instagram.svg" alt="Instagram"
+          /></a>
+          <a href="#"
+            ><img src="/images/icon-pinterest - Copy.svg" alt="Pinterest"
+          /></a>
+          <a href="#"><img src="/images/icon-youtube.svg" alt="YouTube" /></a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

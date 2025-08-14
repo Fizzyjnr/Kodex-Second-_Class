@@ -19,9 +19,9 @@
         /></a>
       </div>
       <div class="flex items-center gap-8 ml-100">
-        <a href="index.html">HOME</a>
-        <a href="about.html">ABOUT US</a>
-        <select name="" id="" class="bg-white text-black rounded px-2 py-1">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <select name="" id="" class="text-white px-2 py-1">
           <option value="">Our subsidiaries</option>
           <option value="">sub 1</option>
           <option value="">sub 2</option>
@@ -32,9 +32,16 @@
       </div>
       <div>
         <button
-          class="bg-amber-500 text-white px-7 py-2 rounded-[5px] w-[180px]"
+          class="relative group bg-amber-500 text-white px-7 py-3 rounded-[5px] w-[200px] overflow-hidden ml-[20px]"
         >
-          <a href="/src/SignIn.html">Register</a>
+          <span
+            class="relative z-10 block group-hover:text-amber-500 transition-colors duration-300"
+          >
+            <a href="/src/SignUp.html"> Register</a>
+          </span>
+          <span
+            class="absolute inset-0 bg-[#1b1b1b] scale-x-0 origin-left transition-transform duration-300 ease-in-out group-hover:scale-x-100"
+          ></span>
         </button>
       </div>
     </nav>
@@ -80,5 +87,66 @@
         />
       </div>
     </section>
+    <!-- footer -->
+    <footer class="bg-[#1b1b1b] h-[600px] w-[auto]">
+      <div class="text-white flex justify-between mx-[60px] relative">
+        <div class="mt-[100px]">
+          <img
+            src="/images/kodexafricaLogo.png"
+            alt=""
+            class="h-[60px] mb-[10px]"
+          />
+          <p class="text-white w-[75%]">
+            At Kodex Africa, we are developing a pipeline of African tech
+            talents equipped with the skills, support, and network that they
+            need to solve African problems.
+          </p>
+        </div>
+        <div
+          class="flex flex-col w-[40%] gap-[6px] mt-[150px] relative right-[50px]"
+        >
+          <h2 class="font-medium tracking-wider mb-[10px]">Quick Links</h2>
+          <a href="index.html" class="text-[15px]">Home</a>
+          <a href="about.html" class="text-[15px]">About Us</a>
+          <a href="/src/contactus.html" class="text-[15px]">Contact Us</a>
+          <a href="" class="text-[15px]">Login</a>
+          <a href="" class="text-[15px]">Term & Conditions </a>
+          <a href="" class="text-[15px]">Privacy Policy</a>
+        </div>
+        <div
+          class="flex flex-col w-[40%] mt-[150px] gap-[6px] relative right-[50px]"
+        >
+          <h2 class="font-medium tracking-wider mb-[10px]">Explore</h2>
+          <a href="" class="text-[15px]">Kodex Academy</a>
+          <a href="" class="text-[15px]">Kodex Build</a>
+          <a href="" class="text-[15px]">The SpaceNg</a>
+          <a href="" class="text-[15px]">Career</a>
+        </div>
+        <div
+          class="flex flex-col w-[50%] mt-[150px] gap-[6px] relative right-[50px]"
+        >
+          <h2 class="font-medium tracking-wider mb-[10px]">Contact</h2>
+          <a href="" class="text-[15px]"
+            >Plot No. A/127 Iyiagu Housing Estate, Awka, Anambra State.</a
+          >
+          <a href="" class="text-[15px]">(+234)9031452508</a>
+          <a href="" class="text-[15px]">The SpaceNg</a>
+          <a href="" class="text-[15px]">support@kodexafrica.com</a>
+        </div>
+      </div>
+
+      <div class="flex justify-between mt-[145px] border-t border-white pt-4">
+        <p class="text-sm text-[#e68815] ml-[60px] mt-[25px]">
+          © 2025 Kodex Africa. All Rights Reserved.
+        </p>
+        <div class="flex gap-[10px] mr-[60px] mt-[25px]">
+          <a href="#"><img src="/images/icon-facebook.svg" alt="" /></a>
+          <a href="#"><img src="/images/icon-twitter.svg" alt="" /></a>
+          <a href="#"><img src="/images/icon-instagram.svg" alt="" /></a>
+          <a href="#"><img src="/images/icon-pinterest - Copy.svg" alt="" /></a>
+          <a href="#"><img src="/images/icon-youtube.svg" alt="" /></a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

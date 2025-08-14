@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/counter.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Click The Button</h1>
+    <p id="number">0</p>
+    <button class="auto" onclick="increaseCount()">+</button>
+    <button class="auto" onclick="decreaseCount()">-</button>
+    <button class="auto" onclick="startAuto()">Auto</button>
+    <button class="auto" onclick="stopAuto()">Stop</button>
+    <button class="auto" onclick="resetCount()">Reset</button>
+
+    <script>
+      let count = 0;
+       let autoInterval = null;
+
+      function increaseCount() {
+        count++;
+        document.getElementById("number").innerHTML = count;
+      }
+      function decreaseCount() {
+        count--;
+        document.getElementById("number").innerHTML = count;
+      }
+
+      function startAuto() {
+    // Prevent multiple intervals
+    if (autoInterval !== null) return;
+
+    autoInterval = setInterval(() => {
+      increaseCount();
+    }, 1000);
+  }
+
+     function stopAuto() {
+  clearInterval(autoInterval);
+  autoInterval = null;
+}
+
+function resetCount() {
+  count = 0;
+  document.getElementById("number").innerHTML = count;
+}
+
+
+    </script>
+
+    
+  </body>
+</html>

@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Register Kodex Africa</title>
+    <title>Sign In - Kodex Africa</title>
     <link href="./output.css" rel="stylesheet" />
   </head>
   <body>
-    <nav
+
+       <nav
       class="bg-[#1b1b1b] h-23 text-white flex items-center justify-between px-15 py-4 fixed top-0 w-full z-50"
     >
       <div>
@@ -19,9 +20,9 @@
         /></a>
       </div>
       <div class="flex items-center gap-8 ml-100">
-        <a href="index.html">HOME</a>
-        <a href="about.html">ABOUT US</a>
-        <select name="" id="" class="bg-white text-black rounded px-2 py-1">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <select name="" id="" class="text-white px-2 py-1">
           <option value="">Our subsidiaries</option>
           <option value="">sub 1</option>
           <option value="">sub 2</option>
@@ -32,11 +33,79 @@
       </div>
       <div>
         <button
-          class="bg-amber-500 text-white px-7 py-2 rounded-[5px] w-[180px]"
+          class="relative group bg-amber-500 text-white px-7 py-3 rounded-[5px] w-[200px] overflow-hidden ml-[20px]"
         >
-          <a href="/src/SignIn.html"> Register</a>
+          <span
+            class="relative z-10 block group-hover:text-amber-500 transition-colors duration-300"
+          >
+            <a href="/src/SignUp.html"> Register</a>
+          </span>
+          <span
+            class="absolute inset-0 bg-[#1b1b1b] scale-x-0 origin-left transition-transform duration-300 ease-in-out group-hover:scale-x-100"
+          ></span>
         </button>
       </div>
     </nav>
+
+    <!-- Sign In Section -->
+    <section class="bg-white min-h-screen flex items-center justify-center pt-36 pb-20">
+      <div class="w-full max-w-md px-8 py-10 shadow-lg border border-gray-200 rounded-lg">
+        <div class="flex flex-col items-center mb-6">
+          <img src="https://kodexafrica.com/new/img/kodexafricaLogo.png" alt="Kodex Africa Logo" class="h-[60px] mb-4 bg-black rounded-2xl">
+          <h2 class="text-2xl font-bold text-black">Sign in to your account</h2>
+        </div>
+
+        <div class="mb-4">
+          <input type="email" placeholder="Email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500" />
+        </div>
+        <div class="mb-4">
+          <input type="password" placeholder="Password" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500" />
+        </div>
+
+        <button class="w-full bg-amber-500 text-white py-2 rounded-md hover:bg-amber-600 transition-all duration-300">Sign In</button>
+
+        <p class="text-sm text-center text-gray-600 mt-4">
+          Don’t have an account? <a href="signup.html" class="text-amber-500 font-medium hover:underline">Create one</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#1b1b1b] text-white py-10 mt-20 px-4 md:px-20">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <h2 class="text-xl font-bold mb-4">Kodex Africa</h2>
+          <p class="text-sm">Your trusted partner in tech innovation across Africa.</p>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-3">Company</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-3">Support</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-3">Contact</h3>
+          <ul class="space-y-2 text-sm">
+            <li>Email: info@kodexafrica.com</li>
+            <li>Phone: +234 000 000 0000</li>
+            <li>Address: Lagos, Nigeria</li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-10 text-center text-sm text-gray-400">
+        &copy; 2025 Kodex Africa. All rights reserved.
+      </div>
+    </footer>
+
   </body>
 </html>
